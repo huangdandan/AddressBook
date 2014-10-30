@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>企业通讯录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
+    <link rel="stylesheet" href="css/mct.css">
+</head>
+<body>
+<div data-role="page" id="addresslist">
+    <div data-role="content">
+        <ul data-role="listview" class="ui-nodisc-icon ui-alt-icon">
+            <li><a href="#dep-userlist" data-transition="slide"><img src="images/logo-mct.png" class="ui-li-icon ui-corner-none"><b>北京贸促通国际咨讯有限公司</b></a></li>
+            <li><a href="#dep-userlist" data-transition="slide"><img src="images/logo-company.png" class="ui-li-icon ui-corner-none">中报科技股份有限公司北京分公司</a></li>
+            <li><a href="#dep-userlist" data-transition="slide"><img src="images/logo-department.png" class="ui-li-icon">腾讯企业</a></li>
+            <li><a href="#dep-userlist" data-transition="slide"><img src="images/logo-department.png" class="ui-li-icon">研发部门</a></li>
+            <li><a href="#dep-userlist" data-transition="slide"><img src="images/logo-department.png" class="ui-li-icon">综合管理</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h1><a href="#search" data-icon="search" data-transition="slideup"><img src="images/search@2x.png">搜索本部门</a></h1>
+    </div>
+
+
+</div>
+<div data-role="page" id="dep-userlist">
+    <div data-role="header">
+        <a data-role="button" data-icon="back" data-iconpos="notext" data-rel="back">返回</a>
+        <h1>研发中心</h1>
+        <a data-role="button" data-icon="home" data-iconpos="notext">主页</a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" class="ui-nodisc-icon ui-alt-icon">
+            <li><a href="" data-transition="slide"><img src="images/logo-department.png" class="ui-li-icon">北京</a></li>
+            <li><a href="" data-transition="slide"><img src="images/logo-department.png" class="ui-li-icon">天津</a></li>
+            <li><a href="#user-message" data-transition="slide"><img src="images/sex-man.png" class="ui-li-icon">小明</a></li>
+            <li><a href="#user-message" data-transition="slide"><img src="images/sex-woman.png" class="ui-li-icon">小红</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h1><a href="#search" data-icon="search" data-transition="slideup"><img src="images/search@2x.png">搜索本部门</a></h1>
+    </div>
+</div>
+<div data-role="page" id="user-message">
+    <div data-role="header" data-theme="d" class="noborder">
+        <a data-role="button" data-icon="back" data-iconpos="notext" data-rel="back">返回</a>
+        <h1>员工信息</h1>
+        <a data-role="button" data-icon="home" data-iconpos="notext">主页</a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" class="ui-nodisc-icon ui-alt-icon pd10">
+            <li>
+                <img src="images/user.jpg">
+                <h2>小明<span class="blue">♂</span><a href="#edit-message" data-role="button" data-icon="edit" data-iconpos="notext" class="ui-btn-a">修改</a></h2>
+                <p>xiaoming</p>
+
+            </li>
+            <li>
+                <h3>基本资料</h3>
+                <div class="formgroup">
+                    <label>微信号:</label>
+                    <label>123456</label>
+                </div>
+                <div class="formgroup">
+                    <label>电话:</label>
+                    <a href="tel:010-1234478">010-1234478</a>
+                </div>
+                <div class="formgroup">
+                    <label>手机:</label>
+                    <a href="tel:137898765">137898765</a>
+                </div>
+                <div class="formgroup">
+                    <label>E-mail</label>
+                    <label>email@mail.com</label>
+                </div>
+            </li>
+            <li>
+                <h3>所属部门</h3>
+                <div class="formgroup">
+                    <label class="pull-left">部门1:</label>
+                    <label class="block">北京中关村大街甲59号1007B文化大厦/技术中心/北京</label>
+                </div>
+                <div class="formgroup">
+                    <label class="pull-left">部门1:</label>
+                    <label class="block">北京中关村大街甲59号1007B文化大厦/技术中心/天津</label>
+                </div>
+            </li>
+            <li>
+                <h3>详细信息</h3>
+                <div class="formgroup">
+                    <label>国家:</label>
+                    <label>中国</label>
+                </div>
+                <div class="formgroup">
+                    <label>省份:</label>
+                    <label>北京</label>
+                </div>
+                <div class="formgroup">
+                    <label>省市:</label>
+                    <label>北京</label>
+                </div>
+                <div class="formgroup">
+                    <label class="pull-left">地址:</label>
+                    <label class="block">海淀区中关村大街甲59号1007B</label>
+                </div>
+                <div class="formgroup">
+                    <label>邮编:</label>
+                    <label>100872</label>
+                </div>
+                <div class="formgroup">
+                    <label>传真:</label>
+                    <label>68471948</label>
+                </div>
+                <div class="formgroup">
+                    <label>职务:</label>
+                    <label>程序员</label>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" id="edit-message">
+    <div data-role="header" data-theme="d" class="noborder">
+        <a data-role="button" data-icon="back" data-iconpos="notext" href="#giveup-edittip" data-rel="dialog">返回</a>
+        <h1>员工信息</h1>
+        <a data-role="button" data-icon="check" data-iconpos="notext" id="affirm-edit">确认</a>
+    </div>
+    <div data-role="content">
+        <div class="success-tip bg-success">
+            <p>资料修改已保存</p>
+        </div>
+        <ul data-role="listview" class="ui-nodisc-icon ui-alt-icon pd10" id="edit-message-listview">
+            <li>
+                <img src="images/user.jpg">
+                <h2>xiaoming</h2>
+            </li>
+            <li>
+                <h3>基本信息</h3>
+                <div class="ui-field-contain">
+                    <label for="user-name">用户名：</label>
+                    <input name="user-name" id="user-name" value="小明" type="text">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="sex" class="select">性别：</label>
+                    <select name="sex" id="sex" data-native-menu="false">
+                        <option value="standard">性别</option>
+                        <option value="man">♂</option>
+                        <option value="woman">♀</option>
+                    </select>
+                </div>
+                <div class="ui-field-contain">
+                    <label for="wx-number">微信号：</label>
+                    <input disabled="disabled" name="wx-number" id="wx-number" value="123234" type="text">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="user-tel">电话：</label>
+                    <input name="user-tel" id="user-tel" value="7464499" type="tel">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="user-phone">手机:</label>
+                    <input name="user-phone" id="user-phone" value="123456788" type="tel">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="user-email">E-mail:</label>
+                    <input name="user-email" id="user-email" value="email@mail.com" type="email" >
+                </div>
+            </li>
+            <li>
+                <h3>所属部门</h3>
+                <div class="formgroup light-grey">
+                    <label class="pull-left font-16">部门1:</label>
+                    <label class="block font-16">北京中关村大街甲59号1007B文化大厦/技术中心/北京</label>
+                </div>
+                <div class="formgroup light-grey">
+                    <label class="pull-left font-16">部门2:</label>
+                    <label class="block font-16">北京中关村大街甲59号1007B文化大厦/技术中心/天津</label>
+                </div>
+            </li>
+            <li>
+                <h3>详细信息</h3>
+                <div>
+                    <label class="select">省市区:</label>
+                    <div id="city"></div>
+                </div>
+                <div class="ui-field-contain">
+                    <label for="user-address">地址：</label>
+                    <textarea id="user-address">北京中关村大街甲59号1文化大厦1007北京微语言科技有限公司</textarea>
+                </div>
+                <div class="ui-field-contain">
+                    <label for="postcode">邮编：</label>
+                    <input name="postcode" id="postcode" value="100082" type="number" >
+                </div>
+                <div class="ui-field-contain">
+                    <label for="fax">传真：</label>
+                    <input name="fax" id="fax" value="9309908" type="tel" >
+                </div>
+                <div class="ui-field-contain">
+                    <label for="post">职务：</label>
+                    <input disabled="disabled" name="post" id="post" value="程序员" type="text" >
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" id="search">
+    <div data-role="header">
+        <h1>搜索用户</h1>
+        <a data-role="button"data-rel="back" data-icon="delete" data-iconpos="notext" class="ui-btn-right">取消</a>
+    </div>
+    <div data-role="content">
+        <form class="ui-filterable">
+            <input id="input-search" data-type="search">
+        </form>
+        <ul data-role="listview" data-filter="true" data-input="#input-search">
+            <li>
+                <img src="images/sex-man.png">
+                <h2>张大</h2>
+                <P>.../研发中心/北京</P>
+            </li>
+            <li>
+                <img src="images/sex-man.png">
+                <h2>张二</h2>
+                <P>.../研发中心/北京</P>
+            </li>
+            <li>
+                <img src="images/sex-woman.png">
+                <h2>王五</h2>
+                <P>.../研发中心/北京</P>
+            </li>
+            <li>
+                <img src="images/sex-woman.png">
+                <h2>王五</h2>
+                <P>.../研发中心/北京</P>
+            </li>
+        </ul>
+    </div>
+</div>
+<div data-role="page" id="history">
+    <div data-role="header">
+        <h1>历史记录</h1>
+        <a data-role="button"data-rel="back" data-icon="delete" data-iconpos="notext" class="ui-btn-right">取消</a>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <img src="images/sex-man.png">
+                <h2>张大</h2>
+                <P>.../研发中心/北京</P>
+            </li>
+            <li>
+                <img src="images/sex-man.png">
+                <h2>张二</h2>
+                <P>.../研发中心/北京</P>
+            </li>
+            <li>
+                <img src="images/sex-woman.png">
+                <h2>王五</h2>
+                <P>.../研发中心/北京</P>
+            </li>
+            <li>
+                <img src="images/sex-woman.png">
+                <h2>王五</h2>
+                <P>.../研发中心/北京</P>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div data-role="page" id="giveup-edittip">
+    <div data-role="content">
+        <p class="text-center">您所做的修改还未保存，<br>确定要退出吗？</p>
+    </div>
+        <div class="ui-grid-a">
+        	<div class="ui-block-a"><a href="#" data-role="button" data-theme="b" data-rel="back">取消</a></div>
+        	<div class="ui-block-b"><a href="#edit-message" data-role="button">确定</a></div>
+        </div> 
+</div>
+
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.2.js"></script>
+<script src="js/city/jquery.provincesCity.js"></script>
+<script src="js/city/provincesdata.js"></script>
+<script>
+    //调用三级地市级联插件
+    $(function(){
+        $("#city").ProvinceCity();
+    });
+</script>
+<script type="text/javascript">
+    $(function(){
+        $("#affirm-edit").click(function(){
+            $(".success-tip").fadeIn(1000,function(){
+                $(this).fadeOut(2000)
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+/*color*/
+.dark {
+    color: #333!important
+}
+.white {
+    color: #fff!important
+}
+.red {
+    color: #dd5a43!important
+}
+.light-red {
+    color: #f77!important
+}
+.blue {
+    color: #478fca!important
+}
+.light-blue {
+    color: #93cbf9!important
+}
+.green {
+    color: #69aa46!important
+}
+.light-green {
+    color: #b0d877!important
+}
+.orange {
+    color: #ff892a!important
+}
+.light-orange {
+    color: #fcac6f!important
+}
+.orange2 {
+    color: #feb902!important
+}
+.purple {
+    color: #a069c3!important
+}
+.pink {
+    color: #c6699f!important
+}
+.pink2 {
+    color: #d6487e!important
+}
+.brown {
+    color: #a52a2a!important
+}
+.grey {
+    color: #777!important
+}
+.light-grey {
+    color: #bbb!important
+}
+.bg-gray
+{
+    background: #bbb;
+}
+.bg-blue{
+    background: #478fca;
+}
+.bg-success
+{
+   background: #DFF0D8; 
+}
+.text-center
+{
+    text-align: center;
+}
+.noborder
+{
+    border:0px;
+}
+.pd10
+{
+    padding:0px 10px;
+}
+.pull-left
+{
+    float: left  !important;
+}
+.block
+{
+    display: block !important;
+}
+.font-16
+{
+    font-size: 16px !important;
+}
+input:disabled
+{
+    color: #000;
+}
+.ui-listview > .ui-li-has-icon > img:first-child,
+.ui-listview > .ui-li-has-icon > .ui-btn > img:first-child
+.ui-listview > .ui-li-has-icon > img:first-child,
+.ui-listview > .ui-li-has-icon > .ui-btn > img:first-child {
+     position: absolute;
+     left: .625em;
+     top: .9em;
+     max-height: 1.5em;
+     max-width: 1.5em;
+ }
+
+.ui-listview > .ui-li-has-icon > .ui-btn,
+.ui-listview > .ui-li-static.ui-li-has-icon {
+    min-height: 1.75em;
+    padding-left: 2.5em;
+}
+.ui-btn
+{
+    line-height: 28px;
+}
+
+.ui-listview > .ui-li-static.ui-li-has-thumb {
+    padding-left: 6.25em;
+}
+.ui-listview > .ui-li-static {
+    padding: 0.4em 1em;
+}
+.ui-listview .ui-li-has-thumb > img:first-child
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    max-height: 3em;
+    max-width: 3em;
+}
+#edit-message .ui-listview > .ui-li-static,
+#edit-message .ui-listview > .ui-li-divider,
+#edit-message .ui-listview > li > a.ui-btn
+{
+    margin: 0;
+    display: block;
+    position: relative;
+    text-align: left;
+    overflow:visible;
+    white-space:inherit;
+}
+
+#user-message .ui-listview > .ui-li-static,
+#user-message .ui-listview > .ui-li-divider,
+#user-message .ui-listview > li > a.ui-btn{
+    margin: 0;
+    display: block;
+    position: relative;
+    text-align: left;
+    overflow:visible;
+    white-space:inherit;
+}
+
+#dep-userlist .ui-footer a:link,
+#dep-userlist .ui-footer a:visited,
+#addresslist .ui-footer a:link,
+#addresslist .ui-footer a:visited{
+    color:#fff;
+    text-decoration: none;
+}
+#dep-userlist .ui-footer img,
+#addresslist .ui-footer img{
+    width:16px;
+    height:16px;
+    margin-right:8px;
+    vertical-align: text-bottom;
+}
+/*#user-message ul li span
+{
+    display: inline-block;
+    margin-left: 5px;
+    transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
+}*/
+#user-message ul li a{
+    display: inline-block;
+    padding:0 1em;
+    position: absolute;
+    right:1em;
+}
+.formgroup a,
+.formgroup label,
+.formgroup span
+{
+    display:inline-block;
+    font-size: 0.8em;
+}
+.formgroup input{
+    display: inline-block;
+}
+.formgroup label:first-child
+{
+    width:20%;
+    text-align: right;
+}
+#search .ui-filterable input
+{
+    display: inline-block;
+}
+#test select{
+    width:100%;
+    margin-left:3%;
+    border-radius:5px;
+
+}
+#edit-message .ui-btn {
+    line-height:18px;
+}
+#user-message .formgroup  a {
+    display: inline-block;
+    position: relative;
+}
+.success-tip
+{
+    margin:0px 0px 30px;
+    display: none;
+}
+.success-tip p
+{
+    padding:7px;
+    color: #333;
+}
+
+.success-tip:after
+{
+    clear: both;
+}

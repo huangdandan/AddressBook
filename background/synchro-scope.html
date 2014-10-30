@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>贸速通后台通讯录管理</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar navbar-default" id="navbar">
+    <div class="navbar-container" id="navbar-container">
+
+        <div class="navbar-header pull-left">
+            <a href="#" class="navbar-brand">
+                <small>
+                    <!--<i class="icon-leaf"></i>-->
+                      微信企业通讯录管理系统
+                </small>
+            </a>
+            <!-- /.brand -->
+        </div>
+        <div class="navbar-header pull-right" role="navigation">
+            <ul class="nav ace-nav">
+                <li class="light-blue">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <!--<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo"/>
+                        -->
+							<span class="user-info">
+								<small>欢迎光临,</small>
+								Jason
+							</span>
+                            <span class="caret"></span>
+                    </a>
+
+                    <ul class="user-menu pull-right dropdown-menu  dropdown-close">
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-wrench"></i>
+                                设置
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>
+                                个人资料
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-off"></i>
+                                退出
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.ace-nav -->
+        </div>
+        <!-- /.navbar-header -->
+    </div>
+    <!-- /.container -->
+</div>
+<!--top end-->
+<div class="main-container" id="main-container">
+<div class="main-container-inner">
+    <div class="sidebar" id="sidebar">
+        <!-- #sidebar-shortcuts -->
+        <ul class="nav nav-list">
+            <li>
+                <a>
+                    <i class="glyphicon glyphicon-th"></i>
+                    <span class="menu-text"> 系统管理</span>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a href="user-manage.html">
+                            用户管理
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="system-log.html">
+                            系统日志
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>
+                    <i class="glyphicon glyphicon-book"></i>
+                    <span class="menu-text"> 数据同步管理 </span>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a>
+                            参数设置
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="synchro-server.html">
+                                    同步服务器
+                                </a>
+                            </li>
+                            <li>
+                                <a href="synchro-scope.html">
+                                    同步范围
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attribute-compare.html">
+                                    属性对照
+                                </a>
+                            </li>
+                            <li>
+                                <a href="synchro-parameter.html">
+                                    同步参数
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="server-mangenment.html">
+                            服务管理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="synchro-log.html">
+                            同步日志
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>
+                    <i class="glyphicon glyphicon-phone"></i>
+                    <span class="menu-text">通讯录管理</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="data-manage.html">
+                            数据管理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-derive.html">
+                            导出数据
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- /.nav-list -->
+    </div>
+    <!--sidebar end--> <!--sidebar end--><!--sidebar end-->
+<div class="main-content">
+<div class="breadcrumbs" id="breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <i class="glyphicon glyphicon-home"></i>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">数据同步管理</a>
+        </li>
+        <li>
+            <a href="#">参数设置</a>
+        </li>
+        <li class="active">同步范围</li>
+    </ul>
+    <!-- .breadcrumb -->
+</div>
+
+<div class="page-content">
+    <div class="page-header" id="mycategory">
+        <h1>
+               同步范围
+            <small>
+                <button class="btn btn-success">保存</button>
+            </small>
+        </h1>
+    </div>
+    <!-- /.page-header -->
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- PAGE CONTENT BEGINS -->
+            <form class="clearfix">
+                <h3>部门过滤条件设置</h3>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">启用条件限制（满足此条件的部门才会被同步）
+                    </label>
+                </div>
+                <div class="form-horizontal form-group synchro-scope-from">
+                    <label class="control-label col-md-2" for="de-ldap-name">LDAP属性名</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="de-ldap-name">
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-control">
+                            <option>=</option>
+                            <option>></option>
+                            <option><</option>
+                        </select>
+                    </div>
+                    <label class="control-label col-md-2" for="de-ldap-value">LDAP属性名</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="de-ldap-value">
+                    </div>
+                </div>
+            </form>
+            <form class="clearfix">
+                <h3>用户过滤条件设置</h3>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="">启用条件限制（满足此条件的用户才会被同步）
+                    </label>
+                </div>
+                <div class="form-horizontal form-group synchro-scope-from">
+                    <label class="control-label col-md-2" for="user-ldap-name">LDAP属性名</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="user-ldap-name">
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-control">
+                            <option>=</option>
+                            <option>></option>
+                            <option><</option>
+                        </select>
+                    </div>
+                    <label class="control-label col-md-2" for="user-ldap-value">LDAP属性名</label>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="user-ldap-value">
+                    </div>
+
+                </div>
+            </form>
+      
+        </div>
+    </div>
+</div>
+</div>
+<!-- main-content  end-->
+</div>
+</div>
+<!-- main-container -->
+
+</body>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/sidebar.js"></script>
+</html>
+

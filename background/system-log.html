@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>贸速通后台通讯录管理</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar navbar-default" id="navbar">
+    <div class="navbar-container" id="navbar-container">
+
+        <div class="navbar-header pull-left">
+            <a href="#" class="navbar-brand">
+                <small>
+                    <!--<i class="icon-leaf"></i>-->
+                      微信企业通讯录管理系统
+                </small>
+            </a>
+            <!-- /.brand -->
+        </div>
+        <div class="navbar-header pull-right" role="navigation">
+            <ul class="nav ace-nav">
+                <li class="light-blue">
+                    <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                        <!--<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo"/>
+                        -->
+							<span class="user-info">
+								<small>欢迎光临,</small>
+								Jason
+							</span>
+                            <span class="caret"></span>
+                    </a>
+
+                    <ul class="user-menu pull-right dropdown-menu  dropdown-close">
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-wrench"></i>
+                                设置
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>
+                                个人资料
+                            </a>
+                        </li>
+
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-off"></i>
+                                退出
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.ace-nav -->
+        </div>
+        <!-- /.navbar-header -->
+    </div>
+    <!-- /.container -->
+</div>
+<!--top end-->
+<div class="main-container" id="main-container">
+<div class="main-container-inner">
+    <div class="sidebar" id="sidebar">
+        <!-- #sidebar-shortcuts -->
+        <ul class="nav nav-list">
+            <li>
+                <a>
+                    <i class="glyphicon glyphicon-th"></i>
+                    <span class="menu-text"> 系统管理</span>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a href="user-manage.html">
+                            用户管理
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="system-log.html">
+                            系统日志
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>
+                    <i class="glyphicon glyphicon-book"></i>
+                    <span class="menu-text"> 数据同步管理 </span>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a>
+                            参数设置
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="synchro-server.html">
+                                    同步服务器
+                                </a>
+                            </li>
+                            <li>
+                                <a href="synchro-scope.html">
+                                    同步范围
+                                </a>
+                            </li>
+                            <li>
+                                <a href="attribute-compare.html">
+                                    属性对照
+                                </a>
+                            </li>
+                            <li>
+                                <a href="synchro-parameter.html">
+                                    同步参数
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="server-mangenment.html">
+                            服务管理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="synchro-log.html">
+                            同步日志
+                        </a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a>
+                    <i class="glyphicon glyphicon-phone"></i>
+                    <span class="menu-text">通讯录管理</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="data-manage.html">
+                            数据管理
+                        </a>
+                    </li>
+                    <li>
+                        <a href="data-derive.html">
+                            导出数据
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- /.nav-list -->
+    </div>
+    <!--sidebar end--> <!--sidebar end--><!--sidebar end-->
+<div class="main-content">
+<div class="breadcrumbs" id="breadcrumbs">
+    <ul class="breadcrumb">
+        <li>
+            <i class="glyphicon glyphicon-home"></i>
+            <a href="#">Home</a>
+        </li>
+
+        <li>
+            <a href="#">管理系统</a>
+        </li>
+        <li class="active">系统日志</li>
+    </ul>
+    <!-- .breadcrumb -->
+</div>
+
+<div class="page-content">
+    <div class="page-header" id="mycategory">
+        <h1>
+                系统日志
+            <small>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#new-user">下载日志</button>
+            </small>
+        </h1>
+    </div>
+    <!-- /.page-header -->
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- PAGE CONTENT BEGINS -->
+            <form class="form-horizontal row clearfix" role="form">
+                <div class="form-group col-md-4">
+                    <label class="col-md-4 control-label">日志级别</label>
+                    <div class="col-md-7">
+                        <select class="form-control">
+                            <option selected="selected">All</option>
+                            <option>Debug</option>
+                            <option>Info</option>
+                            <option>warn</option>
+                            <option>Error</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-md-4 ">
+                    <label class="col-md-4 control-label">日志条数</label>
+                    <div class="col-md-7">
+                        <select class="form-control">
+                            <option sleected="selected">50</option>
+                            <option>100</option>
+                            <option>200</option>
+                            <option>500</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+            <button class="btn btn-success">查询</button>
+            <div class="tabel-responsive margin-t20">
+              <table class="table">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>内容</th>   
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>       
+                                <td>内容内容内容内容内容内容内容内容内容内容</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>    
+                                <td>内容内容内容内容内容内容内容内容内容内容</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>        
+                                <td>内容内容内容内容内容内容内容内容内容内容</td> 
+                            </tr>
+                            </tbody>
+                        </table>
+            </div>   
+            
+      
+        </div>
+    </div>
+</div>
+</div>
+<!-- main-content  end-->
+</div>
+</div>
+<!-- main-container -->
+
+</body>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/sidebar.js"></script>
+</html>
+
